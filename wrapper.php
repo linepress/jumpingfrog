@@ -1,4 +1,5 @@
 <?php get_template_part( 'templates/header/head') ?>
+<?php get_template_part( 'templates/header/header') ?>
 
   <div class="main-container">
     <div class="main wrapper clearfix">
