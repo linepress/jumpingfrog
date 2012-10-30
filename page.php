@@ -1,3 +1,15 @@
 <?php
-  get_template_part( 'templates/header/header' );
-  get_template_part( 'templates/content/page' );
+
+get_main_template_part( 
+  array(
+  'templates/header/header',
+  'templates/content/page'
+  )
+);
+
+get_sidebar_template_part( 
+  array(
+  'templates/sidebar/contact',
+  'templates/sidebar/zoeken',
+  )
+);
