@@ -1,1 +1,3 @@
-zoeken sidebar blokje
+<div class="sidebar-block">
+  zoeken sidebar blokje
+</div>
