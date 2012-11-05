@@ -59,12 +59,11 @@ body {
     ALL: Orange Theme
    =================== */
 .header-container,
-.footer-container,
-.main aside {
-  background: #f16529; }
+.footer-container {
+  background: #eee; }
 
 .title {
-  color: white; }
+  color: #000; }
 
 /* ==============
     MOBILE: Menu
@@ -80,7 +79,7 @@ nav a {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
-  color: white;
+  color: #000;
   background: #e44d26; }
 
 nav a:hover,
@@ -104,8 +103,15 @@ nav a:hover {
   padding: 0px 5% 10px; }
 
 .footer-container footer {
-  color: white;
+  color: #000;
   padding: 20px 0; }
+
+/* ==============
+    MOBILE: Main
+   ============== */
+#sidebar .sidebar-block {
+  background: #eee;
+  margin-top: 20px; }
 
 /* ===============
     ALL: IE Fixes
@@ -285,3 +291,43 @@ nav a:hover {
   h2,
   h3 {
     page-break-after: avoid; } }
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+html, body {
+  height: 100%; }
+
+#wrap {
+  min-height: 100%; }
+
+.main-container {
+  overflow: auto;
+  padding-bottom: 180px; }
+
+/* must be same height as the footer */
+.footer-container {
+  position: relative;
+  margin-top: -180px;
+  /* negative value of footer height */
+  height: 180px;
+  clear: both; }
+
+/*Opera Fix*/
+body:before {
+  /* thanks to Maleika (Kohoutec)*/
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+  /* thank you Erik J - negate effect of float*/ }
