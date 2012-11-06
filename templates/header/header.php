@@ -1,6 +1,6 @@
 <div class="header-container">
   <header class="wrapper clearfix">
-    <h1 class="title">h1.title</h1>
+    <a href="/"><h1 class="title">h1.title</h1></a>
     <nav>
       <?php 
         wp_nav_menu ( array(
