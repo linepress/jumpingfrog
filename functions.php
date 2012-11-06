@@ -1,23 +1,9 @@
 <?php
-  
-/**
- * Add the LinesCommand to wp-cli if it's defined. Ergo the console version of wp is being used
- *
- * @since 0.0.1
- */
-// foreach ( array('custom-post-types', 'taxonomies', ) as $type )
-//   foreach ( glob(TEMPLATEPATH . "/$type/*.php" ) as $filename )
-//     include $filename;
-
 
 register_nav_menus( array(
   'footer'    => 'Footer menu',
   'main'      => 'Main menu',
 ));
-
-
-# This code is in the Public Domain.
-# I recommend replacing 'my_' with your own prefix.
 
 function my_template_path() {
   return My_Wrapping::$main_template;
@@ -84,3 +70,8 @@ function add_body_class( $classes ) {
   return $classes;
 }
 add_filter( 'body_class', 'add_body_class' );
+
+
+foreach ( array( 'custom-post-types', 'taxonomies', 'helpers' ) as $type )
+  foreach ( glob( TEMPLATEPATH . "/$type/*.php" ) as $filename )
+    include $filename;
