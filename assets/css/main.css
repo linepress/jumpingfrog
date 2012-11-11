@@ -223,6 +223,58 @@ hr {
   padding: 0.2em 0; }
 
 /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
    Base Styling
    ========================================================================== */
 body {
@@ -295,26 +347,27 @@ body:before {
   width: 0;
   margin-top: -32767px; }
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-.wrapper {
-  width: 90%;
-  margin: 0 5%; }
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-.header-container,
-.footer-container {
-  background: #eee; }
-
 .title {
   color: #000; }
 
-/* ==============
-    MOBILE: Menu
-   ============== */
+.ie7 .title {
+  padding-top: 20px; }
+
+/* ==========================================================================
+   Desktop (Small) > Desktop (Small)
+   ========================================================================== */
+/* ==========================================================================
+   Tablet > Desktop (Small)
+   ========================================================================== */
+/* ==========================================================================
+   Desktop (Small) > Desktop (Large)
+   ========================================================================== */
+/* ==========================================================================
+   Desktop (Large)
+   ========================================================================== */
+/* ==========================================================================
+   Phone > Phone (Landscape)
+   ========================================================================== */
 nav ul {
   margin: 0;
   padding: 0; }
@@ -336,49 +389,10 @@ nav a:visited {
 nav a:hover {
   text-decoration: underline; }
 
-/* ==============
-    MOBILE: Main
-   ============== */
-.main {
-  padding: 30px 0; }
-
-.main article h1 {
-  font-size: 2em; }
-
-.main aside {
-  color: #000;
-  padding: 0px 5% 10px; }
-
-.footer-container footer {
-  color: #000;
-  padding: 20px 0; }
-
-.intro {
-  color: #ff0000; }
-
-/* ==============
-    MOBILE: Main
-   ============== */
-#sidebar .sidebar-block {
-  background: #ddd;
-  margin-top: 20px; }
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-.ie7 .title {
-  padding-top: 20px; }
-
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-/* ==========================================================================
-   Media Queries
+   Phone (Landscape) > Tablet
    ========================================================================== */
 @media only screen and (min-width: 480px) {
-  /* ====================
-      INTERMEDIATE: Menu
-     ==================== */
   nav a {
     float: left;
     width: 27%;
@@ -392,31 +406,49 @@ nav a:hover {
   nav li:last-child a {
     margin-right: 0; }
 
-  /* ========================
-      INTERMEDIATE: IE Fixes
-     ======================== */
   nav ul li {
     display: inline; }
 
   .oldie nav a {
     margin: 0 0.7%; } }
+/* ==========================================================================
+   Tablet > Desktop (Small)
+   ========================================================================== */
 @media only screen and (min-width: 768px) {
-  /* ====================
-      WIDE: CSS3 Effects
-     ==================== */
-  /* ============
-      WIDE: Menu
-     ============ */
   .title {
     float: left; }
 
   nav {
     float: right;
-    width: 38%; }
+    width: 38%; } }
+/* ==========================================================================
+   Desktop (Small) > Desktop (Large)
+   ========================================================================== */
+/* ==========================================================================
+   Desktop (Large)
+   ========================================================================== */
+.wrapper {
+  width: 90%;
+  margin: 0 5%; }
 
-  /* ============
-      WIDE: Main
-     ============ */
+.main {
+  padding: 30px 0; }
+
+.main aside {
+  color: #000;
+  padding: 0px 5% 10px; }
+
+.intro {
+  color: #ff0000; }
+
+@media only screen and (min-width: 480px) {
+  /* ==========================================================================
+     Phone (Landscape) > Tablet
+     ========================================================================== */ }
+@media only screen and (min-width: 768px) {
+  /* ==========================================================================
+     Tablet > Desktop (Small)
+     ========================================================================== */
   .main article {
     float: left;
     width: 57%; }
@@ -424,66 +456,50 @@ nav a:hover {
   .main aside {
     float: right;
     width: 28%; } }
+@media only screen and (min-width: 980px) {
+  /* ==========================================================================
+     Desktop (Small) > Desktop (Large)
+     ========================================================================== */ }
 @media only screen and (min-width: 1140px) {
-  /* ===============
-      Maximal Width
-     =============== */
+  /* ==========================================================================
+     Desktop (Large)
+     ========================================================================== */
   .wrapper {
     width: 1026px;
     /* 1140px - 10% for margins */
     margin: 0 auto; } }
+#sidebar .sidebar-block {
+  background: #ddd;
+  margin-top: 20px; }
+
 /* ==========================================================================
-   Helper classes
+   Desktop (Small) > Desktop (Small)
    ========================================================================== */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  *text-indent: -9999px; }
+/* ==========================================================================
+   Tablet > Desktop (Small)
+   ========================================================================== */
+/* ==========================================================================
+   Desktop (Small) > Desktop (Large)
+   ========================================================================== */
+/* ==========================================================================
+   Desktop (Large)
+   ========================================================================== */
+.footer-container footer {
+  color: #000;
+  padding: 20px 0; }
 
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 100%; }
-
-.hidden {
-  display: none !important;
-  visibility: hidden; }
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto; }
-
-.invisible {
-  visibility: hidden; }
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
-.clearfix {
-  *zoom: 1; }
-
+/* ==========================================================================
+   Desktop (Small) > Desktop (Small)
+   ========================================================================== */
+/* ==========================================================================
+   Tablet > Desktop (Small)
+   ========================================================================== */
+/* ==========================================================================
+   Desktop (Small) > Desktop (Large)
+   ========================================================================== */
+/* ==========================================================================
+   Desktop (Large)
+   ========================================================================== */
 /* ==========================================================================
    Print styles
    ========================================================================== */
