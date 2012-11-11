@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Base Styling
+   ========================================================================== */
+
+body {
+  color: $color-base;
+  line-height: $lineheight-base;
+}
+
+//
+// Typograpy
+// --------------------------------------------------
+
+p {
+  padding-bottom: $padding-base;
+}
+
+//
+// Headings
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: $padding-base;
+}
+
+h1 {
+  font-size: $fontsize-h1;
+  line-height: $flineheight-h1;
+}
+
+h2 {
+  font-size: $fontsize-h2;
+  line-height: $lineheight-h2;
+}
+
+h3 {
+  font-size: $fontsize-h3;
+  line-height: $lineheight-h3;
+}
+
+h4 {
+  font-size: $fontsize-h4;
+  line-height: $lineheight-h4;
+}
+
+h5 {
+  font-size: $fontsize-h5;
+  line-height: $lineheight-h5;
+}
+
+h6 {
+  font-size: $fontsize-h6;
+  line-height: $lineheight-h6;
+}
+
+//
+// Links
+// --------------------------------------------------
+
+a {
+  color: $color-link;
+}
+
+a:hover, a:focus {
+  color: $color-link-hover;
+}
+
+//
+// Sticky Footer [by Steve Hatcher | http://www.cssstickyfooter.com]
+// --------------------------------------------------
+
+* { margin:0; padding:0; } 
+
+html, body { height: 100% }
+
+#wrap { min-height: 100%; }
+
+.main-container {
+  overflow:auto;
+  padding-bottom: $height-footer; /* must be same height as the footer */
+}
+
+.footer-container {
+  position: relative;
+  margin-top: 0 - $height-footer; /* negative value of footer height */
+  height: $height-footer;
+  clear: both;
+}
+
+/*Opera Fix*/
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+}
