@@ -10,8 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <?php
-    wp_enqueue_style( 'main', get_template_directory_uri() .'/assets/css/normalize.css' );
-    wp_enqueue_style( 'normalize', get_template_directory_uri() .'/assets/css/main.css' );
+    if( ENVIRONMENT == 'prod' ) { 
+      wp_enqueue_style( 'main', get_template_directory_uri() .'/assets/css/main.css' );
+    } else {
+      wp_enqueue_style( 'main-min', get_template_directory_uri() .'/assets/css/main.min.css' );
+    }
   ?>
   <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
