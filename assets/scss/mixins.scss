@@ -6,12 +6,47 @@
 // IE mixins
 // --------------------------------------------------
 
+// Use: @include inline-block
 @mixin inline-block { 
   display: inline-block;
   *zoom: 1;
   *display: inline;
 }
 
+// Use: @include text-indent
+@mixin text-indent {
+  text-indent: -9999px;
+  *font-size: 0; 
+  *display:block; 
+  *line-height: 0;
+}
+
+// Use: @include min-height(500px)
+@mixin min-height($value) {
+  min-height: $value;
+  *height:auto !important;
+  *height: $value;
+}
+
 //
 // CSS3 mixins
 // --------------------------------------------------
+
+// Use: @include opacity(75)
+@mixin opacity($opacity) {
+  *zoom: 1;
+  *filter: alpha(opacity=$opacity);
+  opacity: $opacity / 100;
+}
+
+// Use: @include box-shadow(1px 1px 1px 1px #000) || @include box-shadow(inset 1px 1px px 1px #000)
+@mixin box-shadow($arguments) {
+  -webkit-box-shadow: $arguments;
+  box-shadow: $arguments;
+}
+
+// Use: @include border(5px) || @include border(5px 2px)
+@mixin border-radius($value) {
+  -webkit-border-radius: $value;
+  border-radius: $value;
+}
