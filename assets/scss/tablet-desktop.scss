@@ -2,12 +2,14 @@
 // Tablet > Desktop (Small)
 // ==========================================================================
 
-.main article {
-  float: left;
-  width: 57%;
-}
+@media only screen and (min-width: 768px) {
+  .main article {
+    float: left;
+    width: 57%;
+  }
 
-.main aside {
-  float: right;
-  width: 28%;
+  .main aside {
+    float: right;
+    width: 28%;
+  }
 }

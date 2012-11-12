@@ -8,11 +8,10 @@
 @import "header.scss";
 @import "menu.scss";
 
-@import "phone.scss"; // Base style == Phone style
-@media only screen and (min-width: 480px) { @import "phone-tablet.scss"; }
-@media only screen and (min-width: 768px) { @import "tablet-desktop.scss"; }
-@media only screen and (min-width: 980px) { @import "desktop-max.scss"; }
-@media only screen and (min-width: 1140px) { @import "desktop.scss"; }
+@import "main.scss"; // Main style = Phone style
+@import "phone-tablet.scss";
+@import "tablet-desktop.scss";
+@import "desktop.scss";
 
 @import "sidebar.scss";
 
