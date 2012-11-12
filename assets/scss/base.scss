@@ -4,6 +4,8 @@
 
 body {
   color: $color-base;
+  font-family: $fontfamily-base;
+  font-size: $fontsize-base;
   line-height: $lineheight-base;
 }
 
@@ -20,6 +22,7 @@ p {
 // --------------------------------------------------
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $fontfamily-titles;
   padding-bottom: $padding-base;
 }
 
