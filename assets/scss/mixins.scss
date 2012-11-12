@@ -50,3 +50,64 @@
   -webkit-border-radius: $value;
   border-radius: $value;
 }
+
+//
+// Helper mixins
+// --------------------------------------------------
+
+// Use: @include clearfix
+@mixin clearfix {
+  *zoom: 1;
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Use: @include hidden
+@mixin hidden {
+  display: none;
+  visibility: hidden;
+}
+
+// Use: @include visuallyhidden
+@mixin visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  &.focusable {
+    &:active, &:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+  }
+}
+
+// Use: @include ir
+@mixin ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+}
