@@ -78,12 +78,12 @@ html, body { height: 100% }
 
 #wrap { min-height: 100%; }
 
-.main-container {
+#main {
   overflow:auto;
   padding-bottom: $height-footer; /* must be same height as the footer */
 }
 
-.footer-container {
+#footer {
   position: relative;
   margin-top: 0 - $height-footer; /* negative value of footer height */
   height: $height-footer;
