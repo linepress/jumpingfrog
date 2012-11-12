@@ -3,12 +3,12 @@
 // ==========================================================================
 
 @media only screen and (min-width: 768px) {
-  .main article {
+  #content {
     float: left;
     width: 57%;
   }
 
-  .main aside {
+  #sidebar {
     float: right;
     width: 28%;
   }
