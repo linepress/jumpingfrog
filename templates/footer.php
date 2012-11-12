@@ -1,9 +1,10 @@
-    </div> <!--- .wrap -->
-    <div class="footer-container">
-      <footer class="wrapper">
+    </div> <!--- #wrap -->
+
+    <footer id="footer">
+      <div class="container">
         <h3>footer</h3>
-      </footer>
-    </div> 
+      </div> <!--- #footer > .container -->
+    </footer> <!--- #footer -->
   
     <?php wp_footer(); // Footer hook for javascript parsing ?>
   </body>

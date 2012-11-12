@@ -9,6 +9,8 @@
   <title><?php wp_title('|', true, 'right'); bloginfo( 'name' ); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link type="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css'" />
+
   <?php
     if( ENVIRONMENT == 'prod' ) { 
       wp_enqueue_style( 'style', get_template_directory_uri() .'/assets/css/style.css' );
@@ -16,6 +18,7 @@
       wp_enqueue_style( 'style-min', get_template_directory_uri() .'/assets/css/style.min.css' );
     }
   ?>
+  <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
@@ -40,8 +43,8 @@
 
 <body <?php body_class(); ?>>
 
-  <div id="wrap">
-  <!--[if lt IE 8]>
+  <div id="wrap" role="document">
+  <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
       <style type="text/css">
         #wrap {display:table;height:100%}

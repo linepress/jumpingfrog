@@ -1,3 +1,3 @@
-<div class="sidebar-block">
+<section class="sidebar-block">
   contact sidebar blokje
-</div>
+</section>

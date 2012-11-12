@@ -1,12 +1,12 @@
 <?php get_template_part( 'templates/header/head') ?>
 <?php get_template_part( 'templates/header/header') ?>
 
-  <div class="main-container">
-    <div class="main wrapper clearfix">
+  <div id="main" role="main">
+    <div class="container">
    
     <?php include my_template_path(); ?>
    
-    </div> <!-- .main -->
-  </div> <!-- .main-container -->
+    </div> <!-- #main > .container -->
+  </div> <!-- #main -->
 
 <?php get_template_part( 'templates/footer');

@@ -1,7 +1,10 @@
-<div class="header-container">
-  <header class="wrapper clearfix">
-    <a href="/"><h1 class="title">h1.title</h1></a>
-    <nav>
+<header id="header" role="banner">
+  <div class="container">
+    <a class="title" href="/">
+      <h1><?php echo bloginfo( 'name' ); ?></h1>
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="<?php echo bloginfo( 'name' ); ?>" title="Terug naar homep" />
+    </a>
+    <nav id="nav-main" role="navigation">
       <?php 
         wp_nav_menu ( array(
           'theme_location'  => '',
@@ -23,5 +26,5 @@
         ) );
       ?>
     </nav>
-  </header>
-</div>
+  </div>
+</header>
