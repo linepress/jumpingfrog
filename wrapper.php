@@ -4,7 +4,7 @@
   <div id="main" role="main">
     <div class="container">
    
-    <?php include my_template_path(); ?>
+    <?php include jf_template_path(); ?>
    
     </div> <!-- #main > .container -->
   </div> <!-- #main -->
