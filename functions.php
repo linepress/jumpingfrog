@@ -5,11 +5,11 @@ register_nav_menus( array(
   'main'      => 'Main menu',
 ));
 
-function my_template_path() {
+function jf_template_path() {
   return My_Wrapping::$main_template;
 }
 
-function my_template_base() {
+function jf_template_base() {
   return My_Wrapping::$base;
 }
 
@@ -26,7 +26,7 @@ class My_Wrapping {
    */
   static $base;
 
-  static function wrap( $template ) {
+  static function jf_wrap( $template ) {
     self::$main_template = $template;
 
     self::$base = substr( basename( self::$main_template ), 0, -4 );
@@ -43,12 +43,12 @@ class My_Wrapping {
   }
 }
 
-add_filter( 'template_include', array( 'My_Wrapping', 'wrap' ), 99 );
+add_filter( 'template_include', array( 'My_Wrapping', 'jf_wrap' ), 99 );
 
 
 
 
-function get_main_template_part( $templates ){
+function jf_get_main_template_part( $templates ){
   print '<article id="content">';
   foreach ( $templates as $template ) {
     get_template_part( $template );
@@ -56,7 +56,7 @@ function get_main_template_part( $templates ){
   print '</article>';
 }
 
-function get_sidebar_template_part( $templates ){
+function jf_get_sidebar_template_part( $templates ){
   print '<aside id="sidebar">';
   foreach ( $templates as $template ) {
     get_template_part( $template );
@@ -65,13 +65,16 @@ function get_sidebar_template_part( $templates ){
 }
 
 
-function add_body_class( $classes ) {
+function jf_add_body_class( $classes ) {
   unset($classes[1]);
   return $classes;
 }
-add_filter( 'body_class', 'add_body_class' );
+add_filter( 'body_class', 'jf_add_body_class' );
 
 
 foreach ( array( 'custom-post-types', 'taxonomies', 'helpers' ) as $type )
   foreach ( glob( TEMPLATEPATH . "/$type/*.php" ) as $filename )
     include $filename;
+
+
+add_theme_support( 'automatic-feed-links' );
