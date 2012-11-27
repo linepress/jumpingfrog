@@ -423,6 +423,9 @@ nav.active a {
 .sticky {
   background-color: #eeeeee; }
 
+.bypostauthor {
+  background-color: #dddddd; }
+
 .aligncenter {
   display: block;
   margin: 0 auto; }
