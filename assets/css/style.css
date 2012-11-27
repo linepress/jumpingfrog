@@ -410,9 +410,15 @@ nav.active a {
   h3 {
     page-break-after: avoid; } }
 .wp-caption {
-  border: solid 5px #fff;
+  background: #fff;
   -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25); }
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding-top: 5px; }
+
+.wp-caption-text {
+  font-size: 12px;
+  padding: 10px; }
 
 .aligncenter {
   display: block;
