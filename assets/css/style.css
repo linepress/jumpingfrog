@@ -420,6 +420,9 @@ nav.active a {
   font-size: 12px;
   padding: 10px; }
 
+.gallery-caption {
+  font-size: 12px; }
+
 .sticky {
   background-color: #eeeeee; }
 
