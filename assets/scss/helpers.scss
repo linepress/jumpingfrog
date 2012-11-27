@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .wp-caption {
-  background: #fff;
+  background-color: #fff;
   @include box-shadow(0 0 5px 1px $color-shadow);
   text-align: center;
   padding-top: 5px;
@@ -19,7 +19,7 @@
 }
 
 .sticky {
-
+  background-color: $bgcolor-sticky;
 }
 
 .bypostauthor {
