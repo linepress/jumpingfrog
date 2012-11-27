@@ -10,6 +10,11 @@ body {
   line-height: $lineheight-base;
 }
 
+.container {
+  width: 90%;
+  margin: 0 5%;
+}
+
 //
 // Typograpy
 // --------------------------------------------------
@@ -29,32 +34,26 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: $fontsize-h1;
-  line-height: $lineheight-h1;
 }
 
 h2 {
   font-size: $fontsize-h2;
-  line-height: $lineheight-h2;
 }
 
 h3 {
   font-size: $fontsize-h3;
-  line-height: $lineheight-h3;
 }
 
 h4 {
   font-size: $fontsize-h4;
-  line-height: $lineheight-h4;
 }
 
 h5 {
   font-size: $fontsize-h5;
-  line-height: $lineheight-h5;
 }
 
 h6 {
   font-size: $fontsize-h6;
-  line-height: $lineheight-h6;
 }
 
 //
@@ -98,4 +97,31 @@ body:before {
   float: left;
   width: 0;
   margin-top: -32767px;
+}
+
+// ==========================================================================
+// Phone (Landscape) > Tablet
+// ==========================================================================
+
+@media only screen and (min-width: 480px) {
+
+}
+
+// ==========================================================================
+// Tablet > Desktop
+// ==========================================================================
+
+@media only screen and (min-width: 768px) {
+
+}
+
+// ==========================================================================
+// Desktop
+// ==========================================================================
+
+@media only screen and (min-width: 980px) {
+  .container {
+    max-width: $max-width-container;
+    margin: 0 auto;
+  }
 }
