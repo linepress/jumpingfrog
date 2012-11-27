@@ -214,7 +214,11 @@ body {
   color: #333333;
   font-family: Arial, sans-serif;
   font-size: 13px;
-  line-height: 20px; }
+  line-height: 1.5; }
+
+.container {
+  width: 90%;
+  margin: 0 5%; }
 
 p {
   padding-bottom: 15px; }
@@ -224,28 +228,22 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 15px; }
 
 h1 {
-  font-size: 24px;
-  line-height: 24px; }
+  font-size: 24px; }
 
 h2 {
-  font-size: 22px;
-  line-height: 22px; }
+  font-size: 22px; }
 
 h3 {
-  font-size: 20px;
-  line-height: 20px; }
+  font-size: 20px; }
 
 h4 {
-  font-size: 18px;
-  line-height: 18px; }
+  font-size: 18px; }
 
 h5 {
-  font-size: 16px;
-  line-height: 16px; }
+  font-size: 16px; }
 
 h6 {
-  font-size: 14px;
-  line-height: 14px; }
+  font-size: 14px; }
 
 a {
   color: #888888; }
@@ -283,6 +281,10 @@ body:before {
   width: 0;
   margin-top: -32767px; }
 
+@media only screen and (min-width: 980px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto; } }
 #header {
   background-color: #dddddd; }
   #header > .container {
@@ -303,40 +305,27 @@ body:before {
 nav ul {
   margin: 0;
   padding: 0; }
-
 nav a {
-  display: block;
-  margin-bottom: 10px;
-  padding: 15px 0;
+  background: #cccccc;
+  color: black;
   text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000;
-  background: #aaa; }
-
-nav a:hover,
-nav a:visited {
-  color: white; }
-
-nav a:hover {
-  text-decoration: underline; }
+  display: block; }
+  nav a:hover {
+    background: #bbbbbb;
+    color: #444444; }
+nav.active a {
+  background: #aaaaaa;
+  color: #888888; }
 
 @media only screen and (min-width: 480px) {
   nav a {
-    float: left;
-    width: 27%;
-    margin: 0 1.7%;
-    padding: 25px 2%;
-    margin-bottom: 0; }
-
-  nav li:first-child a {
-    margin-left: 0; }
-
-  nav li:last-child a {
-    margin-right: 0; }
-
-  nav ul li {
+    float: left; }
+  nav li {
     display: inline; }
+    nav li:first-child a {
+      margin-left: 0; }
+    nav li:last-child a {
+      margin-right: 0; }
 
   .oldie nav a {
     margin: 0 0.7%; } }
@@ -352,10 +341,6 @@ nav a:hover {
     display: table; }
   #main > .container:after {
     clear: both; }
-
-.container {
-  width: 90%;
-  margin: 0 5%; }
 
 @media only screen and (min-width: 768px) {
   #content {
