@@ -10,6 +10,10 @@ $bgcolor-body: #eee;
 $bgcolor-header: #ddd;
 $bgcolor-footer: #ddd;
 
+$bgcolor-menu: #ccc;
+$bgcolor-menu-hover: #bbb;
+$bgcolor-menu-active: #aaa;
+
 //
 // Color
 // --------------------------------------------------
@@ -17,6 +21,10 @@ $bgcolor-footer: #ddd;
 $color-base: #333;
 $color-link: #888;
 $color-link-hover: #aaa;
+
+$color-menu: #000;
+$color-menu-hover: #444;
+$color-menu-active: #888;
 
 //
 // Font Family
@@ -41,13 +49,7 @@ $fontsize-h6: 14px;
 // Line Height
 // --------------------------------------------------
 
-$lineheight-base: 20px;
-$lineheight-h1: 24px;
-$lineheight-h2: 22px;
-$lineheight-h3: 20px;
-$lineheight-h4: 18px;
-$lineheight-h5: 16px;
-$lineheight-h6: 14px;
+$lineheight-base: 1.50;
 
 //
 // Padding
@@ -55,10 +57,10 @@ $lineheight-h6: 14px;
 $padding-base: 15px; // Used for bottom padding on P and H1-h6 elements
 
 //
-// Height
+// Width
 // --------------------------------------------------
 
-$width-max: 1200px;
+$max-width-container: 1200px;
 
 //
 // Height
