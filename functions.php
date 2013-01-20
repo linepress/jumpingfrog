@@ -79,4 +79,7 @@ foreach ( array( 'custom-post-types', 'taxonomies', 'helpers' ) as $type )
     include $filename;
 
 
+var_dump(TEMPLATEPATH);
+var_dump(get_template_directory());
+
 add_theme_support( 'automatic-feed-links' );
