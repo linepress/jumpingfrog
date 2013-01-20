@@ -57,11 +57,13 @@ function jf_get_main_template_part( $templates ){
 }
 
 function jf_get_sidebar_template_part( $templates ){
-  print '<aside id="sidebar">';
-  foreach ( $templates as $template ) {
-    get_template_part( $template );
-  }
-  print '</aside>';
+  if( !empty($templates) ) {
+    print '<aside id="sidebar">';
+    foreach ( $templates as $template ) {
+      get_template_part( $template );
+    }
+    print '</aside>';
+}
 }
 
 
