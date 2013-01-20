@@ -8,7 +8,6 @@ jf_get_main_template_part(
 
 jf_get_sidebar_template_part( 
   array(
-  'templates/sidebar/example',
-  'templates/sidebar/another-example',
+
   )
 );
