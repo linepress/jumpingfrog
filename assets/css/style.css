@@ -295,10 +295,6 @@ body:before {
     .header > .container:after {
       clear: both; }
 
-.title h1 {
-  display: none;
-  visibility: hidden; }
-
 @media only screen and (min-width: 768px) {
   .title {
     float: left; } }
