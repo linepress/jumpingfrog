@@ -63,7 +63,7 @@ function jf_get_sidebar_template_part( $templates ){
       get_template_part( $template );
     }
     print '</aside>';
-}
+  }
 }
 
 
@@ -75,11 +75,15 @@ add_filter( 'body_class', 'jf_add_body_class' );
 
 
 foreach ( array( 'custom-post-types', 'taxonomies', 'helpers' ) as $type )
-  foreach ( glob( TEMPLATEPATH . "/$type/*.php" ) as $filename )
+  foreach ( glob( get_template_directory() . "/$type/*.php" ) as $filename )
     include $filename;
 
-
-var_dump(TEMPLATEPATH);
-var_dump(get_template_directory());
-
 add_theme_support( 'automatic-feed-links' );
+
+
+
+function jf_add_editor_style() {
+  add_theme_support( 'editor_style' );
+  add_editor_style( 'assets/css/editor-style.css' );
+}
+add_action( 'after_setup_theme', 'jf_add_editor_style' );
