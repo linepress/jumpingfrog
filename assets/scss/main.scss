@@ -2,7 +2,7 @@
 // Main [Phone > Phone (Landscape) ]
 // ==========================================================================
 
-#main {
+.main {
   > .container {
     @include clearfix;
     padding: 30px 0;

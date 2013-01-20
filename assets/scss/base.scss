@@ -76,14 +76,14 @@ a:hover, a:focus {
 
 html, body { height: 100% }
 
-#wrap { min-height: 100%; }
+.wrap { min-height: 100%; }
 
-#main {
+.main {
   overflow:auto;
   padding-bottom: $height-footer; /* must be same height as the footer */
 }
 
-#footer {
+.footer {
   position: relative;
   margin-top: 0 - $height-footer; /* negative value of footer height */
   height: $height-footer;

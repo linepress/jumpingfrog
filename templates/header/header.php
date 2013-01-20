@@ -1,10 +1,10 @@
-<header id="header" role="banner">
+<header class="header" role="banner">
   <div class="container">
     <a class="title" href="/">
-      <h1><?php echo bloginfo( 'name' ); ?></h1>
+      <h1 class="hide"><?php echo bloginfo( 'name' ); ?></h1>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="<?php echo bloginfo( 'name' ); ?>" title="Terug naar homepage" />
     </a>
-    <nav id="nav-main" role="navigation">
+    <nav class="nav-main" role="navigation">
       <?php 
         wp_nav_menu ( array(
           'theme_location'  => '',
@@ -26,5 +26,5 @@
         ) );
       ?>
     </nav>
-  </div>  <!--- #header > .container -->
-</header> <!--- #header -->
+  </div>  <!--- .header > .container -->
+</header> <!--- .header -->

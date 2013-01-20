@@ -49,7 +49,7 @@ add_filter( 'template_include', array( 'My_Wrapping', 'jf_wrap' ), 99 );
 
 
 function jf_get_main_template_part( $templates ){
-  print '<article id="content">';
+  print '<article class="content">';
   foreach ( $templates as $template ) {
     get_template_part( $template );
   }
@@ -58,7 +58,7 @@ function jf_get_main_template_part( $templates ){
 
 function jf_get_sidebar_template_part( $templates ){
   if( !empty($templates) ) {
-    print '<aside id="sidebar">';
+    print '<aside class="sidebar">';
     foreach ( $templates as $template ) {
       get_template_part( $template );
     }
