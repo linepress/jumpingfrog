@@ -6,14 +6,8 @@
 
 @import "header.scss";
 @import "menu.scss";
-
-@import "main.scss"; // Main style = Phone style
-@import "phone-tablet.scss";
-@import "tablet-desktop.scss";
-@import "desktop.scss";
-
+@import "main.scss";
 @import "sidebar.scss";
-
 @import "footer.scss";
 
 @import "print.scss";
