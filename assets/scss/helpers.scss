@@ -3,8 +3,7 @@
 // ==========================================================================
 
 .hide {
-  display: none;
-  visibility: hidden;
+  @include hidden;
 }
 
 .wp-caption {

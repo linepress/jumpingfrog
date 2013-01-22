@@ -45,7 +45,7 @@
   box-shadow: $arguments;
 }
 
-// Use: @include border(5px) || @include border(5px 2px)
+// Use: @include border-radius(5px) || @include border-radius(5px 2px)
 @mixin border-radius($value) {
   -webkit-border-radius: $value;
   border-radius: $value;
