@@ -5,7 +5,7 @@
 body {
   background-color: $bgcolor-body;
   color: $color-base;
-  font-family: $fontfamily-base;
+  font-family: $font-base;
   font-size: $fontsize-base;
   line-height: $lineheight-base;
 }
@@ -28,7 +28,7 @@ p {
 // --------------------------------------------------
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $fontfamily-titles;
+  font-family: $font-titles;
   padding-bottom: $padding-base;
 }
 
@@ -121,7 +121,7 @@ body:before {
 
 @media only screen and (min-width: 980px) {
   .container {
-    max-width: $max-width-container;
+    max-width: $maxwidth-container;
     margin: 0 auto;
   }
 }
