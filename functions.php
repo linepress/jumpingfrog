@@ -74,7 +74,7 @@ function jf_add_body_class( $classes ) {
 add_filter( 'body_class', 'jf_add_body_class' );
 
 
-foreach ( array( 'custom-post-types', 'taxonomies', 'helpers' ) as $type )
+foreach ( array( 'post-types', 'taxonomies', 'helpers' ) as $type )
   foreach ( glob( get_template_directory() . "/$type/*.php" ) as $filename )
     include $filename;
 
