@@ -47,7 +47,6 @@ add_filter( 'template_include', array( 'My_Wrapping', 'jf_wrap' ), 99 );
 
 
 
-
 function jf_get_main_template_part( $templates ){
   print '<article class="content">';
   foreach ( $templates as $template ) {
@@ -87,3 +86,7 @@ function jf_add_editor_style() {
   add_editor_style( 'assets/css/editor-style.css' );
 }
 add_action( 'after_setup_theme', 'jf_add_editor_style' );
+
+
+
+load_theme_textdomain('jumping-frog', get_template_directory() .'/lang' );
