@@ -68,6 +68,15 @@ function jf_get_sidebar_template_part( $templates ){
 
 function jf_add_body_class( $classes ) {
   unset($classes[1]);
+
+  if( is_singular() ){
+    $classes[] = 'single-' . get_post_type();
+  }
+
+  if( is_post_type_archive() ){
+    $classes[] = 'archive-' . get_post_type();
+  }
+
   return $classes;
 }
 add_filter( 'body_class', 'jf_add_body_class' );
