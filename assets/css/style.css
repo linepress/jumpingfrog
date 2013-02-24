@@ -1,3 +1,6 @@
+/* ========================================================================== *\
+|* Reset [ Normalize v.1.0.1 ]                                                *|
+\* ========================================================================== */
 article,
 aside,
 details,
@@ -209,12 +212,16 @@ hr {
   color: #000;
   padding: 0.2em 0; }
 
+/* ========================================================================== *\
+|* Base                                                                       *|
+\* ========================================================================== */
 body {
   background-color: #eeeeee;
   color: #333333;
   font-family: Arial, sans-serif;
   font-size: 13px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  min-width: 320px; }
 
 .container {
   width: 90%;
@@ -281,10 +288,46 @@ body:before {
   width: 0;
   margin-top: -32767px; }
 
-@media only screen and (min-width: 980px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto; } }
+/* ========================================================================== *\
+|* Helpers                                                                    *|
+\* ========================================================================== */
+.hide, .hidden {
+  display: none;
+  visibility: hidden; }
+
+.wp-caption {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding-top: 5px; }
+
+.wp-caption-text {
+  font-size: 12px;
+  padding: 10px; }
+
+.gallery-caption {
+  font-size: 12px; }
+
+.sticky {
+  background-color: #eeeeee; }
+
+.bypostauthor {
+  background-color: #dddddd; }
+
+.aligncenter {
+  display: block;
+  margin: 0 auto; }
+
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
+
+/* ========================================================================== *\
+|* Header                                                                     *|
+\* ========================================================================== */
 .header {
   background-color: #dddddd; }
   .header > .container {
@@ -295,9 +338,9 @@ body:before {
     .header > .container:after {
       clear: both; }
 
-@media only screen and (min-width: 768px) {
-  .title {
-    float: left; } }
+/* ========================================================================== *\
+|* Menu                                                                       *|
+\* ========================================================================== */
 .nav-main ul {
   margin: 0;
   padding: 0; }
@@ -313,19 +356,9 @@ body:before {
   background: #aaaaaa;
   color: #888888; }
 
-@media only screen and (min-width: 480px) {
-  .nav-main a {
-    float: left; }
-  .nav-main li {
-    display: inline; }
-    .nav-main li:first-child a {
-      margin-left: 0; }
-    .nav-main li:last-child a {
-      margin-right: 0; } }
-@media only screen and (min-width: 768px) {
-  .nav-main {
-    float: right;
-    width: 38%; } }
+/* ========================================================================== *\
+|* Main                                                                       *|
+\* ========================================================================== */
 .main > .container {
   *zoom: 1;
   padding: 30px 0; }
@@ -335,10 +368,9 @@ body:before {
   .main > .container:after {
     clear: both; }
 
-@media only screen and (min-width: 768px) {
-  .content {
-    float: left;
-    width: 57%; } }
+/* ========================================================================== *\
+|* Sidebar                                                                    *|
+\* ========================================================================== */
 .sidebar {
   color: #000;
   padding: 0px 5% 10px; }
@@ -347,13 +379,52 @@ body:before {
   background: #ddd;
   margin-top: 20px; }
 
-@media only screen and (min-width: 768px) {
-  .sidebar {
-    float: right;
-    width: 28%; } }
+/* ========================================================================== *\
+|* Footer                                                                     *|
+\* ========================================================================== */
 .footer {
   background-color: #dddddd; }
 
+/* ========================================================================== *\
+|* Phone (Landscape) > Tablet                                                 *|
+\* ========================================================================== */
+@media only screen and (min-width: 480px) {
+  .nav-main a {
+    float: left; }
+  .nav-main li {
+    display: inline; }
+    .nav-main li:first-child a {
+      margin-left: 0; }
+    .nav-main li:last-child a {
+      margin-right: 0; } }
+/* ========================================================================== *\
+|* Tablet > Desktop                                                           *|
+\* ========================================================================== */
+@media only screen and (min-width: 768px) {
+  .title {
+    float: left; }
+
+  .nav-main {
+    float: right;
+    width: 38%; }
+
+  .content {
+    float: left;
+    width: 57%; }
+
+  .sidebar {
+    float: right;
+    width: 28%; } }
+/* ========================================================================== *\
+|* Desktop                                                                    *|
+\* ========================================================================== */
+@media only screen and (min-width: 980px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto; } }
+/* ========================================================================== *\
+|* Print                                                                      *|
+\* ========================================================================== */
 @media print {
   * {
     background: transparent !important;
@@ -403,36 +474,3 @@ body:before {
   h2,
   h3 {
     page-break-after: avoid; } }
-.hide, .hidden {
-  display: none;
-  visibility: hidden; }
-
-.wp-caption {
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  padding-top: 5px; }
-
-.wp-caption-text {
-  font-size: 12px;
-  padding: 10px; }
-
-.gallery-caption {
-  font-size: 12px; }
-
-.sticky {
-  background-color: #eeeeee; }
-
-.bypostauthor {
-  background-color: #dddddd; }
-
-.aligncenter {
-  display: block;
-  margin: 0 auto; }
-
-.alignleft {
-  float: left; }
-
-.alignright {
-  float: right; }

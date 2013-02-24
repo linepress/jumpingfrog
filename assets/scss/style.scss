@@ -3,12 +3,18 @@
 
 @import "reset.scss";
 @import "base.scss";
+@import "helpers.scss";
 
+// Phone > Phone (Landscape)
 @import "header.scss";
 @import "menu.scss";
 @import "main.scss";
 @import "sidebar.scss";
 @import "footer.scss";
 
+// Phone (Landscape) > Tablet
+@import "phone-tablet.scss";
+@import "tablet-desktop.scss";
+@import "desktop.scss";
+
 @import "print.scss";
-@import "helpers.scss";
