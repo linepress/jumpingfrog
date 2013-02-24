@@ -27,32 +27,32 @@ p {
 // Headings
 // --------------------------------------------------
 
-h1, h2, h3, h4, h5, h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: $font-titles;
   padding-bottom: $padding-base;
 }
 
-h1 {
+h1, .h1 {
   font-size: $fontsize-h1;
 }
 
-h2 {
+h2, .h2 {
   font-size: $fontsize-h2;
 }
 
-h3 {
+h3, .h3 {
   font-size: $fontsize-h3;
 }
 
-h4 {
+h4, .h4 {
   font-size: $fontsize-h4;
 }
 
-h5 {
+h5, .h5 {
   font-size: $fontsize-h5;
 }
 
-h6 {
+h6, .h6 {
   font-size: $fontsize-h6;
 }
 
