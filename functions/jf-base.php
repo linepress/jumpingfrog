@@ -41,6 +41,15 @@ class My_Wrapping {
 add_filter( 'template_include', array( 'My_Wrapping', 'jf_wrap' ), 99 );
 
 
+function jf_get_main_header_template_part( $templates ) {
+  if( !empty( $templates ) ) {
+    print '<div class="main-header">';
+    foreach( $templates as $template ) {
+      get_template_part( $template );
+    }
+    print '</div>';
+  }
+}
 
 function jf_get_main_template_part( $templates ){
   print '<article class="content">';
