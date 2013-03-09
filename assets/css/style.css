@@ -254,10 +254,14 @@ h6, .h6 {
   font-size: 14px; }
 
 a {
-  color: #888888; }
-
-a:hover, a:focus {
-  color: #aaaaaa; }
+  color: #888888;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+  a:hover, a:focus {
+    color: #aaaaaa; }
 
 * {
   margin: 0;
