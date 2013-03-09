@@ -1,4 +1,4 @@
-<?php;
+<?php
 
 jf_get_main_header_template_part(
   array(
