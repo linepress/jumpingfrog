@@ -9,6 +9,8 @@ body {
   font-size: $fontsize-base;
   line-height: $lineheight-base;
   min-width: 320px;
+  // Force vertical scrollbar to avoid jumping if navigating from short to long page and vice versa
+  overflow-y: scroll;
 }
 
 .container {
