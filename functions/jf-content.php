@@ -19,3 +19,16 @@ function jf_excerpt_more_link( $more ) {
   return '...';
 }
 add_filter('excerpt_more', 'jf_excerpt_more_link');
+
+// Add images sizes into options table for cropper fix.
+// See http://core.trac.wordpress.org/ticket/23860
+function jf_add_image_size( $name, $width = 0, $height = 0, $crop = false ) {
+  add_image_size( $name, $width, $height, $crop );
+
+  // Check whether they've been added in the db, otherwise you keep adding them on init.
+  if( strlen( get_option( "{$name}_size_w" ) ) || strlen( get_option( "{$name}_size_h" ) ) ) {
+    add_option( "{$name}_size_w", $width, '', 'yes' );
+    add_option( "{$name}_size_h", $height, '', 'yes' );
+    add_option( "{$name}_crop", ((int) $crop), '', 'yes' );
+  }
+}
