@@ -1,7 +1,7 @@
     </div> <!--- .wrap -->
 
     <footer class="footer">
-      <div class="container">
+      <div class="container clearfix">
         <h3>footer</h3>
       </div> <!--- .footer > .container -->
     </footer> <!--- .footer -->

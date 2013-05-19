@@ -2,7 +2,7 @@
 <?php get_template_part( 'templates/header/header') ?>
 
   <div class="main" role="main">
-    <div class="container">
+    <div class="container clearfix">
    
     <?php include jf_template_path(); ?>
    
