@@ -6,6 +6,23 @@
   @include hidden;
 }
 
+.clearfix {
+  @include clearfix;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
 .wp-caption {
   background-color: #fff;
   @include box-shadow(0 0 5px 1px $color-shadow);
@@ -28,17 +45,4 @@
 
 .bypostauthor {
   background-color: $bgcolor-postauthor;
-}
-
-.aligncenter {
-  display: block;
-  margin: 0 auto;
-}
-
-.alignleft {
-  float: left;
-}
-
-.alignright {
-  float: right;
 }

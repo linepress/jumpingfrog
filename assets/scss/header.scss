@@ -4,8 +4,4 @@
 
 .header {
   background-color: $bgcolor-header;
-
-  > .container {
-    @include clearfix;
-  }
 }
