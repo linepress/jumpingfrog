@@ -13,8 +13,8 @@
 @import "footer.scss";
 
 // Phone (Landscape) > Desktop
-@import "phone-tablet.scss";
-@import "tablet-desktop.scss";
-@import "desktop.scss";
+@import "from-480.scss";
+@import "from-768.scss";
+@import "from-960.scss";
 
 @import "print.scss";
