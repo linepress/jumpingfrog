@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title><?php wp_title('|', true, 'right'); bloginfo( 'name' ); ?></title>
+  <title><?php wp_title('|', true, 'right') ?></title>
 
   <?php
     if( ENVIRONMENT == 'prod' ) { 
