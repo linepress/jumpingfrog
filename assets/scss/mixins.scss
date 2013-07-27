@@ -32,26 +32,26 @@
 // CSS3 mixins
 // --------------------------------------------------
 
-// Use: @include opacity(75)
+// Use: @include opacity(75);
 @mixin opacity($opacity) {
   *zoom: 1;
   *filter: alpha(opacity=$opacity);
   opacity: $opacity / 100;
 }
 
-// Use: @include box-shadow(1px 1px 1px 1px #000) || @include box-shadow(inset 1px 1px px 1px #000)
+// Use: @include box-shadow(1px 1px 1px 1px #000); || @include box-shadow(inset 1px 1px px 1px #000);
 @mixin box-shadow($arguments) {
   -webkit-box-shadow: $arguments;
   box-shadow: $arguments;
 }
 
-// Use: @include border-radius(5px) || @include border-radius(5px 2px)
+// Use: @include border-radius(5px); || @include border-radius(5px 2px);
 @mixin border-radius($value) {
   -webkit-border-radius: $value;
   border-radius: $value;
 }
 
-// Use: @include transition(all 0.25s ease) || @include transition(color 0.25s ease)
+// Use: @include transition(all 0.25s ease); || @include transition(color 0.25s ease);
 @mixin transition($arguments) {
   -webkit-transition: $arguments;
   -moz-transition: $arguments;
@@ -64,7 +64,21 @@
 // Helper mixins
 // --------------------------------------------------
 
-// Use: @include clearfix
+// Use: @include border-box
+@mixin border-box {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Use: @include content-box
+@mixin content-box {
+ -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+// Use: @include clearfix;
 @mixin clearfix {
   *zoom: 1;
 
@@ -77,46 +91,8 @@
   }
 }
 
-// Use: @include hidden
+// Use: @include hidden;
 @mixin hidden {
   display: none;
   visibility: hidden;
-}
-
-// Use: @include visuallyhidden
-@mixin visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-
-  &.focusable {
-    &:active, &:focus {
-      clip: auto;
-      height: auto;
-      margin: 0;
-      overflow: visible;
-      position: static;
-      width: auto;
-    }
-  }
-}
-
-// Use: @include ir
-@mixin ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  *text-indent: -9999px;
-
-  &:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
-  }
 }
