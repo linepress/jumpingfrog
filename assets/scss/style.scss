@@ -1,17 +1,22 @@
+// Variables and mixins
 @import "variables.scss";
 @import "mixins.scss";
 
+// CSS Normalize
 @import "normalize.scss";
 // @import "normalize-legacy.scss"; // If IE6 and/or IE7 support is required use this Normalize instead
+
+// Phone > Phone (Landscape)
 @import "base.scss";
 @import "helpers.scss";
 
-// Phone > Phone (Landscape)
 @import "header.scss";
 @import "menu.scss";
+
 @import "main.scss";
 @import "homepage.scss";
 @import "sidebar.scss";
+
 @import "footer.scss";
 
 // Phone (Landscape) > Desktop
@@ -19,4 +24,10 @@
 @import "from-768.scss";
 @import "from-960.scss";
 
+// Misc
+@import "ie.scss";
+@import "retina.scss";
 @import "print.scss";
+
+// Shame: where all the ugly stuff goes...
+@import "shame.scss";
