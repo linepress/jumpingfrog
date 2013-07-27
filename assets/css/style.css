@@ -257,39 +257,36 @@ h6, .h6 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000366}}
 a {
-  color: #888888; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000369}}
-  a:hover, a:focus {
-    color: #aaaaaa; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000375}}
-.csstransitions a {
+  color: #888888;
   -webkit-transition: color 0.25s ease;
   -moz-transition: color 0.25s ease;
   -ms-transition: color 0.25s ease;
   -o-transition: color 0.25s ease;
   transition: color 0.25s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000370}}
+  a:hover, a:focus {
+    color: #aaaaaa; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000379}}
 * {
   margin: 0;
   padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000381}}
 html, body {
   height: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000383}}
 .wrap {
   min-height: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000385}}
 .main {
   overflow: auto;
   padding-bottom: 180px;
   /* must be same height as the footer */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000390}}
 .footer {
   position: relative;
   margin-top: -180px;
@@ -298,7 +295,7 @@ html, body {
   clear: both; }
 
 /*Opera Fix*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000398}}
 body:before {
   content: "";
   height: 100%;
@@ -315,14 +312,14 @@ body:before {
   visibility: hidden; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/helpers\.scss}line{font-family:\000039}}
-.clearfix {
+.clearfix, .cf {
   *zoom: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/mixins\.scss}line{font-family:\0000371}}
-  .clearfix:before, .clearfix:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/mixins\.scss}line{font-family:\0000385}}
+  .clearfix:before, .clearfix:after, .cf:before, .cf:after {
     content: " ";
     display: table; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/mixins\.scss}line{font-family:\0000375}}
-  .clearfix:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/mixins\.scss}line{font-family:\0000389}}
+  .clearfix:after, .cf:after {
     clear: both; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/helpers\.scss}line{font-family:\0000313}}
@@ -468,6 +465,12 @@ body:before {
   .container {
     max-width: 1200px;
     margin: 0 auto; } }
+/* ========================================================================== *\
+|* IE Specific                                                                *|
+\* ========================================================================== */
+/* ========================================================================== *\
+|* Retina                                                                     *|
+\* ========================================================================== */
 /* ========================================================================== *\
 |* Print                                                                      *|
 \* ========================================================================== */

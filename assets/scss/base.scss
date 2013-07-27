@@ -65,15 +65,10 @@ h6, .h6 {
 
 a {
   color: $color-link;
+  @include transition( color 0.25s ease );
 
   &:hover, &:focus {
     color: $color-link-hover;
-  }
-}
-
-.csstransitions {
-  a {
-    @include transition( color 0.25s ease );
   }
 }
 
