@@ -1,5 +1,11 @@
 <?php
 
+// Register navigation menu's
+register_nav_menus( array(
+  'footer'    => 'Footer menu',
+  'main'      => 'Main menu',
+));
+
 class jf_walker_nav_menu extends Walker_Nav_Menu {
   
   // add classes to ul sub-menus
