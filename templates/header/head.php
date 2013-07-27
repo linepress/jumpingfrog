@@ -6,7 +6,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php wp_title('|', true, 'right'); ?></title>
+  <title><?php
+    include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+    if ( is_plugin_active( 'wordpress-seo/wp-seo.php' ) ) {
+      wp_title( '|', true, 'right' );
+    } else {
+      wp_title( '|', true, 'right' ) . bloginfo( 'name' );
+    }
+  ?></title>
 
   <?php
     if( ENVIRONMENT == 'prod' ) { 

@@ -20,8 +20,9 @@ function jf_excerpt_more_link( $more ) {
 }
 add_filter('excerpt_more', 'jf_excerpt_more_link');
 
-// Add images sizes into options table for cropper fix.
-// See http://core.trac.wordpress.org/ticket/23860
+// Create two custom image size functions.
+// One hooks into the 'init' and uses `add_image_size()`.
+// The other hooks into the 'after_switch_theme' and uses `jf_add_image_size()` to insert them into the database;
 function jf_add_image_size( $name, $width = 0, $height = 0, $crop = false ) {
   add_image_size( $name, $width, $height, $crop );
 
