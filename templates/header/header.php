@@ -3,7 +3,7 @@
 ?>
 
 <header class="header" role="banner">
-  <div class="container clearfix">
+  <div class="container cf">
     <?php if( is_front_page() ): ?>
       <h1>
         <a class="title" href="/">
