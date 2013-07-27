@@ -16,15 +16,6 @@
     }
   ?></title>
 
-  <?php
-    if( ENVIRONMENT == 'prod' ) { 
-      wp_enqueue_style( 'style-min', get_template_directory_uri() .'/assets/css/style.min.css' );
-    } else {
-      wp_enqueue_style( 'style', get_template_directory_uri() .'/assets/css/style.css' );
-    }
-  ?>
-  <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
-
   <?php wp_head(); ?>
 
   <?php if( ENVIRONMENT == 'prod' ){ ?>
