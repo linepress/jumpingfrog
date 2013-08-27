@@ -129,5 +129,17 @@ add_filter( 'body_class', 'jf_add_body_class' );
 add_theme_support( 'automatic-feed-links' );
 
 
+// Remove generator meta element
+function rm_generator_filter() {
+  return '';
+}
+add_filter('the_generator', 'rm_generator_filter');
+
+
+// Remove wlwmanifest and rsd link elements
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'rsd_link');
+
+
 // Load translation files || Read more about this in /lang/readme.txt
 load_theme_textdomain('jumping-frog', get_template_directory() .'/lang' );
