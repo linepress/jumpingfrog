@@ -19,30 +19,4 @@
     margin-top: 0 - $height-footer-480;
     height: $height-footer-480;
   }
-
-  // ==========================================================================
-  // Menu
-  // ==========================================================================
-
-  .nav-main {
-    a {
-      float: left;
-    }
-
-    li {
-      display: inline;
-
-      &:first-child {
-        a {
-          margin-left: 0;
-        }
-      }
-
-      &:last-child {
-        a {
-          margin-right: 0;
-        }
-      }
-    }
-  }
 }

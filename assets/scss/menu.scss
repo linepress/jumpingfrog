@@ -9,20 +9,15 @@
   }
 
   a {   
-    background: $bgcolor-menu;
     color: $color-menu;
-    text-align: center;
-    display: block;
 
     &:hover {
-      background: $bgcolor-menu-hover;
       color: $color-menu-hover;
     }
   }
 
   &.active {
     a {
-      background: $bgcolor-menu-active;
       color: $color-menu-active;
     }
   }
