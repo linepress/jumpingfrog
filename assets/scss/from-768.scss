@@ -1,5 +1,5 @@
 /* ========================================================================== *\
-|* Tablet > Desktop                                                           *|
+   From 768 and upwards
 \* ========================================================================== */
 
 @media only screen and (min-width: 768px) {
@@ -14,7 +14,7 @@
 
   //
   // Sticky Footer [by Steve Hatcher | http://www.cssstickyfooter.com]
-  // --------------------------------------------------
+  // --------------------------------------------------------------------------
 
   .main {
     padding-bottom: $height-footer-768; /* must be same height as the footer */

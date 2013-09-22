@@ -1,5 +1,5 @@
 /* ========================================================================== *\
-|* Normalize.css v2.1.2 | MIT License | git.io/normalize                      *|
+   Normalize.css v2.1.2 | MIT License | git.io/normalize
 \* ========================================================================== */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/normalize\.scss}line{font-family:\0000320}}
 article,
@@ -205,7 +205,7 @@ table {
   border-spacing: 0; }
 
 /* ========================================================================== *\
-|* Base                                                                       *|
+   Base
 \* ========================================================================== */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\000035}}
 body {
@@ -307,7 +307,7 @@ body:before {
   margin-top: -32767px; }
 
 /* ========================================================================== *\
-|* Helpers                                                                    *|
+   Helpers
 \* ========================================================================== */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/helpers\.scss}line{font-family:\000035}}
 .hide, .hidden {
@@ -366,14 +366,14 @@ body:before {
   background-color: #ddd; }
 
 /* ========================================================================== *\
-|* Header                                                                     *|
+   Header
 \* ========================================================================== */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/header\.scss}line{font-family:\000035}}
 .header {
   background-color: #dddddd; }
 
 /* ========================================================================== *\
-|* Menu                                                                       *|
+   Menu
 \* ========================================================================== */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/menu\.scss}line{font-family:\000036}}
 .nav-main ul {
@@ -390,10 +390,10 @@ body:before {
   color: #888888; }
 
 /* ========================================================================== *\
-|* Homepage                                                                   *|
+   Homepage
 \* ========================================================================== */
 /* ========================================================================== *\
-|* Sidebar                                                                    *|
+   Sidebar
 \* ========================================================================== */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/sidebar\.scss}line{font-family:\000035}}
 .sidebar {
@@ -406,14 +406,14 @@ body:before {
   margin-top: 20px; }
 
 /* ========================================================================== *\
-|* Footer                                                                     *|
+   Footer
 \* ========================================================================== */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/footer\.scss}line{font-family:\000035}}
 .footer {
   background-color: #dddddd; }
 
 /* ========================================================================== *\
-|* Phone (Landscape) > Tablet                                                 *|
+   From 480 and upwards
 \* ========================================================================== */
 @media only screen and (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/from-480\.scss}line{font-family:\0000314}}
@@ -426,7 +426,7 @@ body:before {
     margin-top: -180px;
     height: 180px; } }
 /* ========================================================================== *\
-|* Tablet > Desktop                                                           *|
+   From 768 and upwards
 \* ========================================================================== */
 @media only screen and (min-width: 768px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/from-768\.scss}line{font-family:\0000310}}
@@ -458,7 +458,7 @@ body:before {
     float: right;
     width: 28%; } }
 /* ========================================================================== *\
-|* Desktop                                                                    *|
+   From 960 and upwards
 \* ========================================================================== */
 @media only screen and (min-width: 960px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/from-960\.scss}line{font-family:\0000310}}
@@ -476,13 +476,13 @@ body:before {
     margin-top: -180px;
     height: 180px; } }
 /* ========================================================================== *\
-|* IE Specific                                                                *|
+   IE Specific
 \* ========================================================================== */
 /* ========================================================================== *\
-|* Retina                                                                     *|
+   Retina
 \* ========================================================================== */
 /* ========================================================================== *\
-|* Print                                                                      *|
+   Print
 \* ========================================================================== */
 @media print {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/print\.scss}line{font-family:\000036}}
