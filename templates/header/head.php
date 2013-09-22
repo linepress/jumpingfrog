@@ -16,6 +16,17 @@
     }
   ?></title>
 
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <link rel="apple-touch-icon" href="/apple-touch-icon-57.png" sizes="57x57"> <!-- non-retina iPhone pre iOS 7 -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon-72.png" sizes="72x72"> <!-- non-retina iPad pre iOS 7 -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon-76.png" sizes="76x76"> <!-- non-retina iPad iOS 7 -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon-114.png" sizes="114x114"> <!-- retina iPhone pre iOS 7 -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon-120.png" sizes="120x120"> <!-- retina iPhone iOS 7 -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon-144.png" sizes="144x144"> <!-- retina iPad pre iOS 7 -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon-152.png" sizes="152x152"> <!-- retina iPad iOS 7 -->
+ 
   <?php wp_head(); ?>
 
   <?php if( ENVIRONMENT == 'prod' ){ ?>
