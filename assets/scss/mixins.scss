@@ -60,6 +60,13 @@
   transition: $arguments;
 }
 
+// Use: @include background-size(50px 200px);
+@mixin background-size($arguments) {
+  -webkit-background-size: $arguments;
+  -moz-background-size: $arguments;
+  background-size: $arguments;
+}
+
 //
 // Helper mixins
 // --------------------------------------------------
