@@ -10,13 +10,6 @@ $bgcolor-body: #eee;
 $bgcolor-header: #ddd;
 $bgcolor-footer: #ddd;
 
-$bgcolor-menu: #ccc;
-$bgcolor-menu-hover: #bbb;
-$bgcolor-menu-active: #aaa;
-
-$bgcolor-sticky: #eee;
-$bgcolor-postauthor: #ddd;
-
 //
 // Color
 // --------------------------------------------------
@@ -73,3 +66,6 @@ $maxwidth-container: 1200px;
 // --------------------------------------------------
 
 $height-footer: 180px;
+$height-footer-480: 180px;
+$height-footer-768: 180px;
+$height-footer-960: 180px;

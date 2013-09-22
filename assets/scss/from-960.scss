@@ -3,8 +3,25 @@
 \* ========================================================================== */
 
 @media only screen and (min-width: 960px) {
+  // ==========================================================================
+  // BASE
+  // ==========================================================================
+
   .container {
     max-width: $maxwidth-container;
     margin: 0 auto;
+  }
+
+  //
+  // Sticky Footer [by Steve Hatcher | http://www.cssstickyfooter.com]
+  // --------------------------------------------------
+
+  .main {
+    padding-bottom: $height-footer-960; /* must be same height as the footer */
+  }
+
+  .footer {
+    margin-top: 0 - $height-footer-960;
+    height: $height-footer-960;
   }
 }
