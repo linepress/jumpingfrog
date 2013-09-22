@@ -264,7 +264,7 @@ a {
   -o-transition: color 0.25s ease;
   transition: color 0.25s ease; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000370}}
-  a:hover, a:focus {
+  a:hover, a:focus, a:active {
     color: #aaaaaa; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/base\.scss}line{font-family:\0000379}}
@@ -380,7 +380,7 @@ body:before {
 .nav-main a {
   color: black; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/menu\.scss}line{font-family:\0000314}}
-  .nav-main a:hover {
+  .nav-main a:hover, .nav-main a:focus, .nav-main a:active {
     color: #444444; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/timhuisman\/Sites\/jumping-frog\/httpdocs\/wp-content\/themes\/jumpingfrog\/assets\/scss\/menu\.scss}line{font-family:\0000320}}
 .nav-main.active a {

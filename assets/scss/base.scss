@@ -67,7 +67,7 @@ a {
   color: $color-link;
   @include transition( color 0.25s ease );
 
-  &:hover, &:focus {
+  &:hover, &:focus, &:active {
     color: $color-link-hover;
   }
 }

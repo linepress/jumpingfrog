@@ -11,7 +11,7 @@
   a {   
     color: $color-menu;
 
-    &:hover {
+    &:hover, &:focus, &:active {
       color: $color-menu-hover;
     }
   }
