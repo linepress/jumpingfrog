@@ -1,6 +1,6 @@
 <?php
-  $next_label = __('Next', 'jumping-frog');
-  $prev_label = __('Previous', 'jumping-frog');
+  $next_label = __('Next', 'jumpingfrog');
+  $prev_label = __('Previous', 'jumpingfrog');
 
   global $wp_query;
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
