@@ -1,12 +1,12 @@
 <nav class="nav-main" role="navigation">
-  <?php 
+  <?php
     wp_nav_menu ( array(
-      'theme_location'  => '',
-      'menu'            => 'main', 
-      'container'       => false, 
-      'container_class' => '', 
+      'theme_location'  => 'main'
+      'menu'            => 'main',
+      'container'       => false,
+      'container_class' => '',
       'container_id'    => '',
-      'menu_class'      => 'menu', 
+      'menu_class'      => 'menu',
       'menu_id'         => '',
       'echo'            => true,
       'fallback_cb'     => 'wp_page_menu',
