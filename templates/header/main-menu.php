@@ -1,7 +1,7 @@
 <nav class="nav-main" role="navigation">
   <?php
     wp_nav_menu ( array(
-      'theme_location'  => 'main'
+      'theme_location'  => 'main',
       'menu'            => 'main',
       'container'       => false,
       'container_class' => '',
