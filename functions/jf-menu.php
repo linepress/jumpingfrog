@@ -26,7 +26,7 @@ class jf_walker_nav_menu extends Walker_Nav_Menu {
   }
   
   // add main/sub classes to li's and links
- function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0) ) {
+ function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
     global $wp_query;
     $indent = ( $depth > 0 ? str_repeat( "\t", $depth ) : '' ); // code indent
   
