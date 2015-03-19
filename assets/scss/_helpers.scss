@@ -48,3 +48,12 @@
 .bypostauthor {
   background-color: #ddd;
 }
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  @include screen-reader-text;
+
+  &:focus {
+    @include screen-reader-text-focus;
+  }
+}
