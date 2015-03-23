@@ -38,7 +38,7 @@ gulp.task('scripts-plugins', function() {
 });
 
 gulp.task('scripts-admin', function() {
-  return gulp.src(js_plugins_path)
+  return gulp.src(js_admin_path)
     .pipe(jshint.reporter('default'))
     .pipe(concat('script-admin.js'))
     .pipe(gulp.dest(js_dist_path))
