@@ -6,16 +6,3 @@
   float: left;
   width: 57%;
 }
-
-//
-// Sticky Footer [by Steve Hatcher | http://www.cssstickyfooter.com]
-// --------------------------------------------------------------------------
-
-.main {
-  padding-bottom: $height-footer-768; /* must be same height as the footer */
-}
-
-.footer {
-  margin-top: 0 - $height-footer-768;
-  height: $height-footer-768;
-}

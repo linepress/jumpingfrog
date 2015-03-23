@@ -2,6 +2,23 @@
    Base
 \* ========================================================================== */
 
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-y: scroll; // Force vertical scrollbar to avoid jumping if navigating from short to long page and vice versa
+
+  &.overlay-open {
+    overflow: hidden;
+  }
+}
+
 body {
   background-color: $bgcolor-body;
   color: $color-base;
@@ -9,8 +26,6 @@ body {
   font-size: $fontsize-base;
   line-height: $lineheight-base;
   min-width: 320px;
-  // Force vertical scrollbar to avoid jumping if navigating from short to long page and vice versa
-  overflow-y: scroll;
 }
 
 .container {
@@ -77,32 +92,21 @@ a {
 }
 
 //
-// Sticky Footer [by Steve Hatcher | http://www.cssstickyfooter.com]
+// (Responsive sticky Footer)
 // --------------------------------------------------------------------------
 
-* { margin:0; padding:0; } 
+body {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
 
-html, body { height: 100% }
-
-.wrap { min-height: 100%; }
-
-.main {
-  overflow:auto;
-  padding-bottom: $height-footer; /* must be same height as the footer */
+.wrap {
+  display: table-row;
+  height: 100%;
 }
 
 .footer {
-  position: relative;
-  margin-top: 0 - $height-footer; /* negative value of footer height */
-  height: $height-footer;
-  clear: both;
-}
-
-/*Opera Fix*/
-body:before {
-  content: "";
-  height: 100%;
-  float: left;
-  width: 0;
-  margin-top: -32767px;
+  display: table-row;
+  height: 1px;
 }
