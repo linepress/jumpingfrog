@@ -1,11 +1,8 @@
-// Variables and mixins
 @import "variables.scss";
 @import "mixins.scss";
 
-// CSS Normalize
 @import "normalize.scss";
 
-// Phone > Phone (Landscape)
 @import "base.scss";
 @import "helpers.scss";
 
@@ -17,15 +14,34 @@
 
 @import "footer.scss";
 
-// Phone (Landscape) > Desktop
-@import "from-480.scss";
-@import "from-768.scss";
-@import "from-960.scss";
+/* ========================================================================== *\
+   Min 480px
+\* ========================================================================== */
 
-// Misc
+@media only screen and (min-width: 480px) {
+  @import "min-480/_base.scss";
+}
+
+/* ========================================================================== *\
+   Min 768px
+\* ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+  @import "min-768/_base.scss";
+  @import "min-768/_header.scss";
+  @import "min-768/_menu.scss";
+  @import "min-768/_sidebar.scss";
+}
+
+/* ========================================================================== *\
+   Min 960px
+\* ========================================================================== */
+
+@media only screen and (min-width: 960px) {
+  @import "min-960/_base.scss";
+}
+
 @import "ie.scss";
 @import "retina.scss";
 @import "print.scss";
-
-// Shame: where all the ugly stuff goes...
 @import "shame.scss";
