@@ -84,7 +84,7 @@ h6, .h6 {
 
 a {
   color: $color-link;
-  @include transition( color 0.25s ease );
+  transition: color 0.25s ease;
 
   &:hover, &:focus, &:active {
     color: $color-link-hover;
