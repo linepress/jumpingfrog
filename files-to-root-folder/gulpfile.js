@@ -8,6 +8,7 @@ var root_path = '<path-to-theme>'; // bv. '/wp-content/themes/jumpingrog'
 var scss_path       = root_path+'/assets/src/scss/**/*.scss',
     js_path         = root_path+'/assets/src/js/*.js',
     js_plugins_path = root_path+'/assets/src/js/plugins/*.js',
+    js_admin_path   = root_path+'/assets/src/js/admin/*.js',
     img_path        = root_path+'/assets/src/img/*';
 
 // Default task
@@ -23,6 +24,7 @@ gulp.task('watch', function() {
   // Watch .js files
   gulp.watch(js_path, ['scripts']);
   gulp.watch(js_plugins_path, ['scripts-plugins']);
+  gulp.watch(js_admin_path, ['scripts-admin']);
 
   // Watch image files
   gulp.watch(img_path, ['images']);
