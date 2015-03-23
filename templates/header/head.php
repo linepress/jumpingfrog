@@ -26,10 +26,10 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon-120.png" sizes="120x120"> <!-- retina iPhone iOS 7 -->
   <link rel="apple-touch-icon" href="/apple-touch-icon-144.png" sizes="144x144"> <!-- retina iPad pre iOS 7 -->
   <link rel="apple-touch-icon" href="/apple-touch-icon-152.png" sizes="152x152"> <!-- retina iPad iOS 7 -->
- 
+
   <?php wp_head(); ?>
 
-  <?php if( ENVIRONMENT == 'prod' ){ ?>
+  <?php if( WP_ENV == 'prod' ){ ?>
     <script type="text/javascript">
 
     var _gaq = _gaq || [];
