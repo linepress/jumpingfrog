@@ -18,6 +18,6 @@ var img_dist_path = root_path+'/assets/dist/img';
 // Images
 gulp.task('images', function() {
   return gulp.src(img_path)
-    .pipe(cache(imagemin(imageOptimizationSettings))
+    .pipe(cache(imagemin(imageOptimizationSettings)))
     .pipe(gulp.dest(img_dist_path));
 });
