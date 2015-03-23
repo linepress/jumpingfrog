@@ -13,7 +13,7 @@ var scss_path       = root_path+'/assets/src/scss/**/*.scss',
 
 // Default task
 gulp.task('default', ['clean'], function() {
-  gulp.start('styles', 'scripts', 'scripts-plugins', 'images');
+  gulp.start('styles', 'scripts', 'scripts-plugins', 'scripts-admin', 'images');
 });
 
 // Watch
