@@ -2,7 +2,7 @@
 
 // Return the excerpt of the post, unless the read more element is used
 // Output of both versions will be the same: one <p> with content and one <p> with the more link
-function jf_read_more_excerpt( ) {
+function jf_read_more_excerpt( $post ) {
   $content = get_the_content();
 
   if( strpos( $content, '#more-' ) ) {
