@@ -6,7 +6,7 @@ jf_get_main_header_template_part(
   )
 );
 
-jf_get_main_template_part( 
+jf_get_main_template_part_single( 
   array(
   'templates/content/page'
   )
