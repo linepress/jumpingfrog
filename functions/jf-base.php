@@ -51,12 +51,20 @@ function jf_get_main_header_template_part( $templates ) {
   }
 }
 
-function jf_get_main_template_part( $templates ){
+function jf_get_main_template_part_single( $templates ){
   print '<article class="content">';
   foreach ( $templates as $template ) {
     get_template_part( $template );
   }
   print '</article>';
+}
+
+function jf_get_main_template_part_archive( $templates ){
+  print '<section class="content">';
+  foreach ( $templates as $template ) {
+    get_template_part( $template );
+  }
+  print '</section>';
 }
 
 function jf_get_sidebar_template_part( $templates ){
@@ -72,7 +80,7 @@ function jf_get_sidebar_template_part( $templates ){
 
 // Enqueue all Stylesheets and Javascript files
 function jf_enqueue_scripts_styles() {
-  if( ENVIRONMENT == 'prod' ) { 
+  if( ENVIRONMENT == 'prod' ) {
     wp_enqueue_style( 'style-min', get_template_directory_uri() .'/assets/css/style.min.css', false );
   } else {
     wp_enqueue_style( 'style', get_template_directory_uri() .'/assets/css/style.css', false );
